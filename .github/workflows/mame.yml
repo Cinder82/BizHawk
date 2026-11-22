@@ -22,7 +22,7 @@ jobs:
     uses: ./.github/workflows/waterbox.yml
 
   build-mame:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build-waterbox
     steps:
     - uses: actions/checkout@v6
