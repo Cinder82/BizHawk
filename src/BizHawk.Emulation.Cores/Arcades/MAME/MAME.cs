@@ -207,7 +207,7 @@ namespace BizHawk.Emulation.Cores.Arcades.MAME
 			var args = new List<string>
 			{
 				"mame",                                // dummy, internally discarded by index, so has to go first
-				_gameFileName,                         // no dash for rom names
+				gameName,                              // pass MAME machine shortname, without .zip extension
 				"-noreadconfig",                       // forbid reading ini files
 				"-nowriteconfig",                      // forbid writing ini files
 				"-norewind",                           // forbid rewind savestates (captured upon frame advance)
